@@ -67,3 +67,8 @@ variable "prometheus_adapter_additional_values" {
   description = "Override values for prometheus-adapter release. If this variable is configured, its content will be merged with the other values."
   default = ""
 }
+variable "alertmanager" {
+  type = string
+  description = "Enable/Disable prometheus alertmanager"
+  default = "false"
+}
