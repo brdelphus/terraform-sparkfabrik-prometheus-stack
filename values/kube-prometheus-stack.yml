@@ -66,4 +66,4 @@ kubeScheduler:
 
 # Disable alertmanager
 alertmanager:
-  enabled: false
+  enabled: ${alertmanager}
