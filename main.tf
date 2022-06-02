@@ -62,6 +62,7 @@ resource "helm_release" "kube_prometheus_stack" {
   namespace = var.namespace
   version = var.prometheus_stack_chart_version
   create_namespace = true
+  timeout = 900
 
   values = trimspace(var.prometheus_stack_additional_values) != "" ? [ data.template_file.kube_prometheus_stack_config.template, var.prometheus_stack_additional_values ] : [ data.template_file.kube_prometheus_stack_config.template ]
 
