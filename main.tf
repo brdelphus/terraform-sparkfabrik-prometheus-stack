@@ -51,6 +51,7 @@ data "template_file" "kube_prometheus_stack_config" {
       grafana_ingress_basic_auth_username = var.grafana_ingress_basic_auth_username
       grafana_ingress_basic_auth_message = var.grafana_ingress_basic_auth_message
       grafana_ingress_basic_auth_secret = trimspace(var.grafana_ingress_basic_auth_username) != "" ? "${var.namespace}/${kubernetes_secret.kube_prometheus_ingress_auth[0].metadata[0].name}" : ""
+      alertmanager = var.alertmanager
     }
   )
 }
