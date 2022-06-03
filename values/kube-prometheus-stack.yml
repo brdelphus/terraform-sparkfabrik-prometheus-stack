@@ -63,7 +63,9 @@ kubeControllerManager:
 # Disable Scheduler metrics
 kubeScheduler:
   enabled: false
-
+# Disable kubeproxy metrics
+kubeProxy:
+  enabled: ${kubeproxy}
 # Disable alertmanager
 alertmanager:
   enabled: ${alertmanager}
