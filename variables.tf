@@ -72,3 +72,8 @@ variable "alertmanager" {
   description = "Enable/Disable prometheus alertmanager"
   default = "false"
 }
+variable "kubeproxy" {
+  type = string
+  description = "Enable/Disable prometheus kubeproxy metrics"
+  default = "false"
+}
