@@ -46,15 +46,15 @@ grafana:
 prometheus:
   prometheusSpec:
     podMonitorNamespaceSelector:
-      any: true
+       matchLabels: {}
     podMonitorSelector: {}
     podMonitorSelectorNilUsesHelmValues: false
     ruleNamespaceSelector:
-      any: true
+       matchLabels: {}
     ruleSelector: {}
     ruleSelectorNilUsesHelmValues: false
     serviceMonitorNamespaceSelector:
-      any: true
+       matchLabels: {}
     serviceMonitorSelector: {}
     serviceMonitorSelectorNilUsesHelmValues: false
     storageSpec:
