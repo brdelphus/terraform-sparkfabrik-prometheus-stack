@@ -80,8 +80,10 @@ variable "kubeproxy" {
 variable "slack_URL" {
   type = string
   description = "Name of the secret of the Slack Webhook URL"
+  default = ""
 }
 variable "slack_channel" {
   type = string
   description = "Name of the Slack channel to send alerts"
+  default = ""
 }
