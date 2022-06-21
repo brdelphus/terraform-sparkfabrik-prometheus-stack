@@ -87,3 +87,8 @@ variable "slack_channel" {
   description = "Name of the Slack channel to send alerts"
   default = ""
 }
+variable "alertmanager_additional_values" {
+  type = string
+  description = "Override values for alertmanager release. If this variable is configured, its content will be merged with the other values."
+  default = ""
+}
