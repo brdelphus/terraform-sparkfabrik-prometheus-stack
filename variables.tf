@@ -77,3 +77,11 @@ variable "kubeproxy" {
   description = "Enable/Disable prometheus kubeproxy metrics"
   default = "false"
 }
+variable "slack_URL" {
+  type = string
+  description = "Name of the secret of the Slack Webhook URL"
+}
+variable "slack_channel" {
+  type = string
+  description = "Name of the Slack channel to send alerts"
+}
