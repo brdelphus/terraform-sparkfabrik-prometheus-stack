@@ -77,18 +77,4 @@ variable "kubeproxy" {
   description = "Enable/Disable prometheus kubeproxy metrics"
   default = "false"
 }
-variable "slack_URL" {
-  type = string
-  description = "Name of the secret of the Slack Webhook URL"
-  default = ""
-}
-variable "slack_channel" {
-  type = string
-  description = "Name of the Slack channel to send alerts"
-  default = ""
-}
-variable "alertmanager_additional_values" {
-  type = string
-  description = "Override values for alertmanager release. If this variable is configured, its content will be merged with the other values."
-  default = ""
-}
+
